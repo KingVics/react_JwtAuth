@@ -1,0 +1,38 @@
+.navContainer {
+    background-color: var(--navColor);
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 4em;
+    height: 3em;
+    width: 100%;
+    max-width: 1750px;
+    position: fixed;
+    top: 0;
+    z-index: 1023;
+}
+
+.navContainer > a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+
+.navContainer ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navContainer ul > li:first-child {
+    margin-right: 2em;
+}
+
+.navContainer a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
