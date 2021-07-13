@@ -1,0 +1,151 @@
+.contactUsContainer{
+    width: 100%;
+    background-color: #fff;
+    padding: 10rem 7rem 0;
+
+}
+
+.contactUsContainer h1 {
+    color: var(--textColor);
+    font-style: normal;
+    font-weight: bold;
+}
+
+.adressContainer{
+    margin-top: 5rem;   
+}
+
+.adressContainer > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adressContainer h3 {
+    color: var(--textColor);
+    font-weight: 600;
+}
+
+.adressContainer p{
+    font-size: 1em;
+}
+
+
+.lagosAddress {
+    position: relative;
+    bottom: -100px;
+}
+
+.abujaAddress,
+.kadunaAddress {
+    margin-top: 45px;
+}
+
+.abujaAddress p,
+.kadunaAddress p,
+.lagosAddress p {
+    color: var(--textColor);
+    font-weight: 500;
+
+}
+
+.abujaAddress p:nth-child(2),
+.kadunaAddress p:nth-child(2){
+    margin: 0;
+}
+
+.lagosAddressPhone {
+    margin: 0;
+}
+
+.contactForm {
+    margin: 4rem 0 6rem;
+    
+}
+
+.contactCard {
+    background: #FFFFFF;
+    box-shadow: 0px 5.25265px 21.0106px rgba(0, 0, 0, 0.1);
+    border-radius: 13.1316px;
+    width: 70%;
+}
+
+
+.contactForm h2 {
+    color: var(--textColor);
+    padding-top: 1.5em;
+}
+
+.contactForm p {
+    color: rgba(51, 51, 51, 0.7);
+    font-weight: 600;
+    font-size: 1em
+}
+
+.contactForm form {
+    padding: 4rem;
+}
+
+.contactForm form  div {
+    display: flex;
+}
+
+.contactForm form div:first-child,
+.contactForm form div:nth-child(2) {
+    margin-bottom: 1em;
+}
+
+.contactForm form div:first-child div:first-child,
+.contactForm form div:nth-child(2) div:first-child,
+.contactText div:last-child {
+    margin-right: 20px;
+}
+
+.contactFormMessage > div:last-child {
+    margin-left: 20px;
+}
+
+
+.formModalRed {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    background: #CD113B;
+    width: 100%;
+    z-index: 1;
+    padding: 2rem;
+    color: #fff;
+}
+
+.formModalNormal {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    background: #FFC947;
+    width: 100%;
+    z-index: 1;
+    padding: 2rem;
+    color: #fff;
+}
+
+.formModal {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    background: #66DE93;
+    width: 100%;
+    z-index: 1;
+    padding: 2rem;
+    color: #fff;
+}
+
+.formModal div svg,
+.formModalRed div svg {
+    cursor: pointer;
+}

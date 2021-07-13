@@ -1,0 +1,117 @@
+.attorneyContainer {
+    background: #FAFAF9;
+    overflow: hidden;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.buttonContainer button {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--color-primary);
+    border: 0.1px solid #AFAFAF;
+    color: var(--color-secondary);
+    color:  #7578B8;
+    height: 4em;
+    width: 12%;
+    outline: 0;
+    cursor: pointer;
+    margin: 0px;
+    text-transform: capitalize;
+    text-shadow: var(--shadow) 2px 2px;
+    transition: var(--mainTransition);
+}
+
+
+.buttonContainer button:nth-child(2) {
+    margin: 0px;
+}
+
+
+.attorneyCardContainer {
+    margin: 4em 0 4em;
+    padding: 0 10%;
+}
+
+.attorneyCard {
+    background: #FFFFFF;
+    border: .5px solid #ccc;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    margin: 0.3em 0 1.8em;
+}
+
+.attorneyCard:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.attorneyCard img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.attorneyCard div {
+    padding: 10px .5em 1em;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.attorneyCard h2 {
+    margin: 10px 0;
+    font-size: 1.2em !important;
+    color: var(--textColor);
+}
+
+
+
+.attorneyCard p {
+    margin: 0 0 15px;
+    font-size: .87em;
+}
+
+.attorneyCard button {
+    background-color: var(--buttonColor);
+    border: 0;
+    outline: 0;
+    color: var(--textColor);
+    font-family: 'Lato', sans-serif;
+    padding: 0.4em 0.8em;
+    border-radius: 2px;
+}
+
+
+
+
+/*.buttonContainer button + button {
+    /* border-left: var(--buttonBordersize) solid #AFAFAF; */
+    /* margin-left: calc(var(--buttonBordersize) * -1); */
+
+
+.buttonContainer button:hover,
+.buttonContainer button:focus {
+    width: 15%;
+    color: white;
+    outline: none;
+    text-shadow: none;
+    background-color: var(--buttonColor);
+}
+
+.buttonContainer button:focus {
+    outline: var(--buttonBordersize) dashed #AFAFAF;
+    outline-offset: calc(var(--buttonBordersize) * -3);
+}
+
+.buttonContainer:hover button:focus:not(:hover) {
+    width: 15%;
+    color: var(--color-secondary);
+    background-color: var(--buttonColor);
+    outline-color: var(--color-tertiary);
+}
+
+.buttonContainer button:active {
+    transform: translateY(var(--buttonBordersize));
+}

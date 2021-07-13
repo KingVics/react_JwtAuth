@@ -1,0 +1,111 @@
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 7em;
+    padding: 0 7rem;
+    z-index: 1;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    margin: 0
+
+}
+
+.navLink li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    padding: 0 0.9em;
+    transition: var(--mainTransition);
+}
+
+.navLink li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+.linkChange  li a {
+    color: var(--textColor) !important;
+}
+
+.Active {
+    border-bottom: 3px solid #fff;   
+}
+
+.ActiveOther a{
+    border-bottom: 3px solid var(--navColor);   
+}
+
+
+
+.dropDown,
+.dropDownEvent {
+    position: absolute;
+    top: 20px;    
+    background: #FFFFFF;
+    border-radius: 2px;
+    transition: var(--mainTransition);
+    padding: 0;    
+}
+
+.dropDown {
+    width: 300px;
+}
+
+.dropDownEvent {
+    width: 170px;
+}
+
+.dropDown div,
+.dropDownEvent div {
+    padding: 10px 0;
+}
+
+.dropDown a,
+.dropDownEvent a {
+    color: var(--navColor) !important;
+    text-transform: capitalize !important; 
+    padding:  0 0 0 .7em;
+}
+
+
+
+.dropDown div:hover,
+.dropDownEvent div:hover {
+    background: #F2F5FB;
+border-radius: 2px 2px 0px 0px
+}
+
+
+@media screen and (max-width: 1024px) {
+    .navLink {
+        display: none;
+    }
+    .navContainer {
+        padding: 0 2rem;
+    }
+
+    .hamburgerMenu  {
+        color: #fff;
+    }
+
+    .hamburgerMenu svg {
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    .hamburgerMenu {
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,105 @@
+.aboutContainer img{
+    width: 100%;
+}
+
+.aboutContainer h2 {
+    font-size: 3em !important;
+    font-weight: 600;
+    color: var(--navColor);
+    margin-bottom: 1rem;
+}
+
+.bestlawFirm {
+    margin: 5rem 7rem;
+}
+
+.bestlawFirm p {
+    line-height: 1.8;
+    white-space: normal;
+}
+.bestlawFirmP{
+    margin: 2em 0;
+}
+
+.whychooseUs {
+    margin: 0 7em 5em;
+}
+
+.whyCol {
+    padding-left: 100px !important;
+}
+
+.whyCol > div {
+    margin: 3em 0 0;
+}
+
+.whychooseUs h3 {
+    font-weight: 600;
+}
+
+
+.meetheFounder{
+    margin: 0 7em;
+}
+
+.founderCol {
+    margin-top: 3em !important;
+}
+
+.meetheFounder img {
+    width: 100%;
+}
+
+.meetheFounder h2{
+    text-align: center;
+}
+
+.meetheFounder p{
+    width: 80%;
+    margin: 1em auto 0;
+    line-height: 2;
+}
+
+.meetheFounder button {
+    background-color: var(--buttonColor);
+    border: 0;
+    outline: 0;
+    color: var(--textColor);
+    font-family: 'Lato', sans-serif;
+    padding: 0.4em 0.8em;
+    border-radius: 2px;
+    width: 40%;
+    height: 4em;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.founderCol > div {
+    width: 80%;
+    margin: 2em auto 0;
+}
+
+.needHelp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7em 7em 4em;
+}
+
+.needHelp button{
+    background: transparent;
+    border: 1px solid var(--buttonColor);
+    font-size: 1.1em;
+    text-transform: capitalize;
+    text-transform: capitalize;
+    padding: 0.8em 2.5em;
+    color: var(--textColor);
+    font-family: 'Lato', sans-serif;
+    border-radius: 2px;
+    transition: var(--mainTransition);
+}
+
+.needHelp button:hover{
+    background: var(--buttonColor);
+} 
+

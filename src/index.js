@@ -1,19 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import {Provider} from "react-redux"
+import {compose, applyMiddleware, createStore} from "redux"
+import thunk from "redux-thunk"
 import reportWebVitals from './reportWebVitals';
-import axios from 'axios';
 
 
-axios.defaults.baseURL = "http://localhost:8000/";
-axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('token');
+
+// REDUCERS
+import reducers from "./reducers"
+
+// STYLES
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+
+
+//Redux setup
+const store = createStore(reducers, compose(applyMiddleware(thunk)))
+
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 

@@ -1,0 +1,37 @@
+.CarouselC p {
+    margin: 0;
+    text-align: initial;
+    font-weight: 700;
+}
+
+.CarouselC h1 {
+    text-align: initial;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 370px) {
+    .CarouselC h1 {
+        font-size: .9em !important;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .CarouselC p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .CarouselC h1 {
+        font-size: 1.2em !important;
+    }
+
+    .CarouselC p {
+        font-size: .7em;
+        font-weight: 600;
+    }
+}
+
